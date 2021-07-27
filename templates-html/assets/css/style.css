@@ -1,0 +1,218 @@
+/* Home */
+.home{
+    padding: 60px 0px;
+}
+.home p {
+    margin: 0px;
+}
+
+.home .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    max-width: 515px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 117px;    
+}
+
+.home .content h1 {
+    position: static;       
+    height: 129px;
+    left: 0px;
+    top: calc(50% - 129px/2 - 157px);
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
+    display: flex;
+    align-items: center;
+    color: #16161D;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 25px 0px;
+}
+
+.home .content p {
+    position: static;    
+    height: 87px;
+    left: 0px;
+    top: calc(50% - 87px/2 - 9px);
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+
+    /* Grey 06 */
+    color: #16161D;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.content .job-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;    
+    height: 60px;
+    left: 0px;
+    top: 296px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 25px 0px;
+}
+
+.job-skills .list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 440px;
+    height: 25px;
+    left: 0px;
+    top: 35px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.job-skills .list-item p {
+    position: static;
+    width: 408px;
+    height: 25px;
+    left: 41px;
+    top: 0px;
+
+    font-family: 'IBM Plex Mono', monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 48px;
+    /* or 200% */
+
+    display: flex;
+    align-items: center;
+
+    /* Grey 06 */
+
+    color: #16161D;
+}
+
+.aw.aw-check {
+    background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12.5' cy='12.5' r='12.5' fill='%2316161D'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.89169 16.1672L8.89125 16.1676L11.101 18.3773L11.1014 18.3769L11.1014 18.3769L13.3111 16.1672L13.3111 16.1672L19.9398 9.53847L17.7301 7.32875L11.1014 13.9575L7.41859 10.2747L5.20888 12.4844L8.89169 16.1672Z' fill='white'/%3E%3C/svg%3E");
+}
+
+.job-skills .list-item span {
+    position: static;
+    width: 25px;
+    height: 25px;
+    left: 0px;
+    top: 0px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 16px;
+}
+.content .button-list{
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 326px;
+    height: 47px;
+    left: 0px;
+    top: 396px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 25px 0px;
+}
+.button-list button{                        
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 60px;
+
+    position: static;            
+    height: 47px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */            
+    align-items: center;
+    text-align: center;
+    color: #000000;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-right: 16px;
+}
+
+button.bg-black{
+    background: #16161D;
+    color: #FFFFFF;
+}
+.profile{
+    /* Inside Auto Layout */
+
+}
+.profile .photo{            
+    width: 439px;
+    height: 627px;            
+
+    background: url(../img/me.png), #FFFFFF;
+    background-position: center;
+    background-size:cover ;
+    border-radius: 20px;
+}
