@@ -203,6 +203,12 @@ hr{
     order: 0;
     flex-grow: 0;
     margin-right: 16px;
+    transition: all 0.8s ease;
+}
+
+.button-list button:hover{
+    transform: scale(1.05);
+    transition: all 0.4s ease;
 }
 
 button.bg-black{
@@ -306,7 +312,9 @@ button.bg-black{
     color: #FFFFFF;
     flex: none;
     margin: 12px 0px;
+    transition: all 0.8s ease;
 }
+
 
 
 #works{
@@ -389,6 +397,12 @@ button.bg-black{
     box-sizing: border-box;
     border-radius: 5px;
     color: #ffffff;
+    transition: all 0.8s ease;
+}
+
+.content-des .btn-project:hover {
+    transform: scale(1.05);
+    transition: all 0.4s ease;
 }
 
 .content-des .detail{
@@ -432,6 +446,37 @@ button.bg-black{
     margin: 0px 5px;
 }
 
+.overlay-loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    z-index: 50;
+    background: #16161D;
+}
+
+
+.first {
+    top: 0;
+}
+
+.second {
+    top: 33.3%;
+}
+
+.third {
+    top: 66.6%;
+}
+
+.deskripsi-ku {
+    opacity: 1;
+}
+
+.social-list a:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
 @keyframes smooth-slide {
     0% {
         transform: translateX(-15%);
@@ -448,5 +493,83 @@ button.bg-black{
     100% {            
         transform: translateX(0%);
         animation-play-state: paused;
+    }
+}
+
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px)  {
+    .cont {        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0px 0px 0px 50px;
+        height: 800px;
+    }
+    .profile {        
+        order: 0;  
+        margin: 0;              
+    }
+    .photo{
+        height: 250px !important;
+        width: 220px !important;
+        margin: 0;
+    }
+    .home .content h1 {
+        font-size: 40px;
+        line-height: 45px;
+        margin: 15px 0px !important;        
+    }
+    .home .content p {
+        font-size: 18px;
+        height: max-content;
+    }
+    .job-skills .list-item span{
+        position: relative;
+        margin: 0px 0px;
+                
+    }
+    .job-skills .list-item p {
+        position: relative;
+        font-size: 15px;
+        width: max-content;
+        margin: 0px 0px;
+        margin-left: -25px;
+    }
+    .job-skills .list-item {
+        width: 200px;               
+        justify-content: flex-start;
+    }
+    .home .content {
+        order: 1;       
+        width: 220px; 
+    }
+    .button-list button{
+        padding: 10px 17px;
+        font-size: 15px;
+        height: 35px;
+        transition: all 0.8s ease;
+    }
+    
+
+    #works{
+        padding-left: 15px;
+    }
+
+    .work-item {
+        flex-direction: column;
+    }
+
+    .content-des {        
+        width: auto;
+        order:1;
+    }
+
+    .work-item .content-img {
+        position: unset;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .home{
+        padding: 0px;
     }
 }
