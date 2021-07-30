@@ -12,120 +12,43 @@
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Inter:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/fontawesome/css/all.css" rel="stylesheet">
+    <link href="assets/css/fontawesome/css/all.css" rel="stylesheet">    
     <title>Achmad Awdi - Portofolio Website</title>
 </head>
 
 <style>
-    .cont{
-        /* Auto Layout */
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;               
-        height: 627px;
-    }
-    .side-nav{
-        position: fixed;
-        width: 57px;
-        height: 100%;
-        left: 0px;
-        top: 0px;
 
-        background: #16161D;        
-    }
-    .side-nav .nav-list{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
 
-        position: absolute;
-        width: 22px;
-        
-        left: 17px;
-        top: 32px;
-        overflow: hidden;
-    }
-    .nav-list a{
-        font-family: 'Inter', sans-serif;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 22px;
-        /* identical to box height */        
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
-        transform: rotate(90deg);
-        
-        margin: 20px 0px;
-        padding: 10px 0px;
-        text-decoration: none;
-        animation: scrolling-down 10s linear infinite;
-    }
-    @keyframes scrolling-down {
-        0% {
-            transform: translateY(550%) rotate(90deg);
-        }
-        100% {            
-            transform: translateY(-550%) rotate(90deg);
-        }
-    }
-
-    .side-nav .nav-list:hover, .side-nav .nav-list:hover a{
-        animation-play-state: paused;
-    }
-    .side-nav .social-list{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
-
-        position: absolute;
-        width: 24px;        
-        left: 17px;
-        bottom: 25px;
-    }
-    .social-list a {                
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 21px;
-        text-align: center;
-        color: #FFFFFF;
-        flex: none;
-        margin: 12px 0px;
-    }
-    
 </style>
+
 <body>
-    
-  
-   
+
+
+
     <div class="side-nav">
         <div class="nav-list">
             <a href="#">about</a>
-            <a href="#">works</a>                        
+            <a href="#">works</a>
             <a href="#">contact</a>
         </div>
         <div class="social-list">
             <a href="#"><i class="fa fa-envelope"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>                        
+            <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-whatsapp"></i></a>
         </div>
     </div>
 
-    <section class="home">
+    <section class="home" id="home">
         <div class="container-lg">
             <div class="row">
-                <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                <div class="col-lg-12 pt-3 d-flex justify-content-center align-items-center">
                     <div class="cont">
-                        <div class="content">
+                        <div class="content deskripsi-ku">
                             <h1>Hello, I'm <br>Achmad Awdi</h1>
-                            <p class="pt-1">I am a web developer as well as a mobile application developer, I am very interested in
+                            <p class="pt-1">I am a web developer as well as a mobile application developer, I am very
+                                interested in
                                 developing an application.</p>
                             <div class="job-skills">
                                 <div class="list-item">
@@ -141,7 +64,7 @@
                                 <button>About Me</button>
                                 <button class="bg-black">Works</button>
                             </div>
-                        </div>     
+                        </div>
                         <div class="profile">
                             <div class="photo">
                             </div>
@@ -151,6 +74,212 @@
             </div>
         </div>
     </section>
+
+    <section id="works">
+        <div class="container-lg p-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="pb-5 rc-work">Recent Work</h1>
+                    <div class="row">
+                        <div class="col-lg-6 work-item mb-5">
+                            <div class="content-des">
+                                <div class="title">
+                                    <p class="title-project">FFBID</p>
+                                    <span class="overlay" style="background:#FFFFFF;"></span>
+                                </div>
+                                <p class="detail">People can send confidences through this application and then host of
+                                    the podcast will read and discuss senders confidences it with the listener.</p>
+                                <button class="btn-project">View Project</button>
+                            </div>
+                            <div class="content-img"
+                                style="background-image: url('https://media.discordapp.net/attachments/445232632679235595/870622004544409651/unknown.png?width=855&height=513');">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 work-item mb-5">
+                            <div class="content-des">
+                                <div class="title">
+                                    <p class="title-project">Nooblox</p>
+                                    <span class="overlay" style="background:#124873;"></span>
+                                </div>
+                                <p class="detail">People can send confidences through this application and then host of
+                                    the podcast will read and discuss senders confidences it with the listener.</p>
+                                <button class="btn-project">View Project</button>
+                            </div>
+                            <div class="content-img"
+                                style="background-image: url('https://media.discordapp.net/attachments/445232632679235595/870621656077463562/unknown.png?width=862&height=513');">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 work-item mb-5">
+                            <div class="content-des">
+                                <div class="title">
+                                    <p class="title-project">Sunny Pearl</p>
+                                    <span class="overlay" style="background:#FFCA00;"></span>
+                                </div>
+                                <p class="detail">This website is used for profesional portfolio websites about , game
+                                    maps designer, architectural , and article about the project they work on. </p>
+                                <button class="btn-project">View Project</button>
+                            </div>
+                            <div class="content-img"
+                                style="background-image: url('https://media.discordapp.net/attachments/445232632679235595/870617616312586290/unknown.png');">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 work-item mb-5">
+                            <div class="content-des">
+                                <div class="title">
+                                    <p class="title-project">Dreamlight</p>
+                                    <span class="overlay" style="background:#00AA00;"></span>
+                                </div>
+                                <p class="detail">This website is used for profesional portfolio websites about , game
+                                    maps designer, architectural , and article about the project they work on. </p>
+                                <button class="btn-project">View Project</button>
+                            </div>
+                            <div class="content-img"
+                                style="background-image: url('https://media.discordapp.net/attachments/445232632679235595/870623083663339530/unknown.png?width=866&height=513');">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 work-item mb-5">
+                            <div class="content-des">
+                                <div class="title">
+                                    <p class="title-project">MinefestID</p>
+                                    <span class="overlay" style="background:#8DC63F;"></span>
+                                </div>
+                                <p class="detail">This website is used for profesional portfolio websites about , game
+                                    maps designer, architectural , and article about the project they work on. </p>
+                                <button class="btn-project">View Project</button>
+                            </div>
+                            <div class="content-img"
+                                style="background-image: url('https://media.discordapp.net/attachments/445232632679235595/870666890459095040/unknown.png');">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 work-item mb-5">
+                            <div class="content-des">
+                                <div class="title">
+                                    <p class="title-project">Gunnerries</p>
+                                    <span class="overlay" style="background:#E9A7F7;"></span>
+                                </div>
+                                <p class="detail">People can send confidences through this application and then host of
+                                    the podcast will read and discuss senders confidences it with the listener.</p>
+                                <button class="btn-project">View Project</button>
+                            </div>
+                            <div class="content-img"
+                                style="background-image: url('https://media.discordapp.net/attachments/445232632679235595/769564720818290698/www.websster.site_gunnerries.png');">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <button class="btn-fill">See More</button>
+                    <button class="btn-rounded">Open Resume</button>
+                    <hr class="mt-5">
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .overlay-loading {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0%;
+            z-index: 10;
+            background: #16161D;
+        }
+
+        .first {
+            top: 0;
+        }
+
+        .second {
+            top: 33.3%;
+        }
+
+        .third {
+            top: 66.6%;
+        }
+
+        .deskripsi-ku {
+            opacity: 1;
+        }
+    </style>
+    <div class="overlay-loading first"></div>
+    <div class="overlay-loading second"></div>
+    <div class="overlay-loading third"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>    
+    <script>
+        
+        gsap.registerPlugin(ScrollTrigger);
+        $(document).ready(function(){
+            gsap.from('.deskripsi-ku', 1, {
+                delay: 1.65,
+                opacity: 0,
+                x: -20,
+                ease: Power4.easeInOut
+            })
+
+            gsap.from('.photo', 1, {
+                delay: 1.2,
+                width: '0px',
+                ease: Expo.easeInOut
+            })
+
+            gsap.to('.first', 1.5, {
+                delay: .2,
+                left: '-100%',
+                ease: Expo.easeInOut
+            })
+
+            gsap.to('.second', 1.5, {
+                delay: .4,
+                left: '-100%',
+                ease: Expo.easeInOut
+            })
+
+            gsap.to('.third', 1.5, {
+                delay: .6,
+                left: '-100%',
+                ease: Expo.easeInOut
+            })
+
+            gsap.to('#works',{
+                scrollTrigger:{
+                    trigger: "#works",
+                    start: "20px 80%",
+                    end: "0px",
+                    markers: true,
+                    toggleActions: "play none none none"
+                },                
+                width: "100%",                
+                duration:1,
+            })
+
+            gsap.from('.work-item',{
+                scrollTrigger:{
+                    trigger: "#works",
+                    start: "20px 80%",
+                    end: "0px",
+                    markers: true,
+                    toggleActions: "play none none none"
+                },             
+                delay: .6,   
+                opacity: 0,                
+                duration:1,
+            })
+            gsap.from('.rc-work',{
+                scrollTrigger:{
+                    trigger: "#works",
+                    start: "20px 80%",
+                    end: "0px",
+                    markers: true,
+                    toggleActions: "play none none none"
+                },             
+                delay: .6,   
+                opacity: 0,                
+                duration:1,
+            })
+        });
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
